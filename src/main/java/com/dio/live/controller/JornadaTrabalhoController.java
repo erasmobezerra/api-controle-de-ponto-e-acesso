@@ -3,7 +3,6 @@ package com.dio.live.controller;
 import com.dio.live.model.JornadaTrabalho;
 import com.dio.live.service.JornadaService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -83,7 +82,7 @@ public class JornadaTrabalhoController {
 
     // Deletar uma jornada pelo ID
     @DeleteMapping("/{idJornada}")
-    public ResponseEntity deleteByID(@PathVariable("idJornada") Long idJornada) throws Exception {
+    public ResponseEntity<JornadaTrabalho> deleteByID(@PathVariable("idJornada") Long idJornada) throws Exception {
        try {
            jornadaService.deleteJornada(idJornada);
        }catch (Exception e){
@@ -92,7 +91,5 @@ public class JornadaTrabalhoController {
         return (ResponseEntity<JornadaTrabalho>) ResponseEntity.ok();
 
     }
-
-
 
 }
