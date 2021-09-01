@@ -1,5 +1,12 @@
-# diolive
+# Controle de ponto e acesso
 
-Api rest para gerenciamento de ponto e controle de acesso.
+Este projeto se trata de uma API Rest para controle de ponto e acesso dos usuários de uma empresa.
+Pude desenvolver com o passo-a-passo do ilustre professor <a href="https://github.com/rodolfogomes">Rodolfo Gomes</a> , um curso ofertado pela Digital Innovation One!
 
-Java | Spring boot | Spring Data Jpa | Hibernate | Lombok | swagger
+##
+### Tecnologias utilizadas:
+* Java
+* Spring Boot
+* Hibernate Envers
+* Lombok
+* Documentação da API com Swagger.
