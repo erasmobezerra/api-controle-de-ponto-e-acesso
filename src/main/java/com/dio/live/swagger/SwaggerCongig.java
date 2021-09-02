@@ -38,6 +38,8 @@ public class SwaggerCongig {
                                         .build()));
     }
 
+// Acessar a documentação da API :  http://localhost:8081/swagger-ui.html#/
+
     @Bean
     public ApiInfo apiInfo() {
         return new ApiInfoBuilder()
