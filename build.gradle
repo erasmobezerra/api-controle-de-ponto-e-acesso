@@ -21,6 +21,8 @@ dependencies {
 
     runtimeOnly 'mysql:mysql-connector-java'
 
+    runtimeOnly 'org.postgresql:postgresql'
+
     compileOnly 'org.projectlombok:lombok:1.18.10'
     annotationProcessor 'org.projectlombok:lombok'
 
